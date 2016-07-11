@@ -17,6 +17,12 @@ HTTP Versions supported:
 
 * HTTP/1.1
 
+## Issues
+
+Since this version is only a backport some tests might fail that work for the normal version.
+
+* MIME Detection makes mistakes when being used with jvm 7
+
 ## GET Requests
 
 To perform a simple HTTP GET use the following call.

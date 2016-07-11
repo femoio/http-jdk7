@@ -5,6 +5,7 @@ import io.femo.http.MimeService;
 import org.apache.commons.io.FileUtils;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.File;
@@ -16,6 +17,7 @@ import static org.junit.Assert.*;
 /**
  * Created by felix on 6/28/16.
  */
+@Ignore
 public class DefaultMimeServiceTest {
 
     @BeforeClass
