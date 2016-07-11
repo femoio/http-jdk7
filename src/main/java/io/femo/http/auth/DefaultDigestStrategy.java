@@ -4,8 +4,8 @@ import io.femo.http.Authentication;
 import io.femo.http.HttpException;
 import io.femo.http.HttpRequest;
 import io.femo.http.HttpResponse;
-import io.femo.http.support.Supplier;
-import io.femo.http.support.ValueSupplier;
+import io.femo.support.jdk7.Supplier;
+import io.femo.support.jdk7.ValueSupplier;
 import org.jetbrains.annotations.NotNull;
 
 import javax.xml.bind.DatatypeConverter;

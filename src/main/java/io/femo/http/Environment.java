@@ -1,7 +1,7 @@
 package io.femo.http;
 
 import io.femo.http.middleware.EnvironmentReplacerMiddleware;
-import io.femo.http.support.Supplier;
+import io.femo.support.jdk7.Supplier;
 
 /**
  * Created by felix on 7/2/16.

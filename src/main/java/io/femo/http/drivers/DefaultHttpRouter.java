@@ -8,7 +8,7 @@ import io.femo.http.drivers.server.HttpRouterHandle;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static io.femo.http.support.HttpUtil.joinPaths;
+import static io.femo.support.jdk7.HttpUtil.joinPaths;
 
 
 /**

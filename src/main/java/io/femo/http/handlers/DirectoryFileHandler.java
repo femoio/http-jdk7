@@ -8,7 +8,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-import static io.femo.http.support.HttpUtil.joinPaths;
+import static io.femo.support.jdk7.HttpUtil.joinPaths;
 
 /**
  * Created by felix on 6/11/16.

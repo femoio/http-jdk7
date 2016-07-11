@@ -5,7 +5,7 @@ import io.femo.http.HttpHandler;
 import io.femo.http.HttpRequest;
 import io.femo.http.HttpResponse;
 
-import static io.femo.http.support.HttpUtil.joinPaths;
+import static io.femo.support.jdk7.HttpUtil.joinPaths;
 
 /**
  * Created by felix on 4/25/16.

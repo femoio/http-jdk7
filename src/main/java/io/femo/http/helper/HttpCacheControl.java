@@ -1,7 +1,7 @@
 package io.femo.http.helper;
 
 import io.femo.http.*;
-import io.femo.http.support.Supplier;
+import io.femo.support.jdk7.Supplier;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 

@@ -3,8 +3,8 @@ package io.femo.http;
 import io.femo.http.events.HttpEventHandler;
 import io.femo.http.events.HttpEventManager;
 import io.femo.http.events.HttpEventType;
-import io.femo.http.support.Supplier;
-import io.femo.http.support.ValueSupplier;
+import io.femo.support.jdk7.Supplier;
+import io.femo.support.jdk7.ValueSupplier;
 
 import java.io.OutputStream;
 import java.net.URL;

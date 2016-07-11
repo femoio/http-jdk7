@@ -12,7 +12,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.*;
 import java.util.*;
 
-import io.femo.http.support.Supplier;
+import io.femo.support.jdk7.Supplier;
 
 /**
  * Created by felix on 9/11/15.

@@ -1,7 +1,7 @@
 package io.femo.http;
 
 
-import io.femo.http.support.Supplier;
+import io.femo.support.jdk7.Supplier;
 
 /**
  * Created by Felix Resch on 29-Apr-16.

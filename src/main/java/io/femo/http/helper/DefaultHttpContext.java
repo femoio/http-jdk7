@@ -4,8 +4,8 @@ import io.femo.http.*;
 import io.femo.http.drivers.DefaultBase64Driver;
 import io.femo.http.drivers.DefaultEnvironment;
 import io.femo.http.drivers.DefaultMimeService;
-import io.femo.http.support.DefaultOptional;
-import io.femo.http.support.Optional;
+import io.femo.support.jdk7.DefaultOptional;
+import io.femo.support.jdk7.Optional;
 
 import java.util.ArrayList;
 import java.util.List;

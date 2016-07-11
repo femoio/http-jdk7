@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static io.femo.http.support.HttpUtil.joinPaths;
+import static io.femo.support.jdk7.HttpUtil.joinPaths;
 
 /**
  * Created by felix on 2/24/16.

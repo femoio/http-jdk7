@@ -2,7 +2,7 @@ package io.femo.http;
 
 import io.femo.http.auth.DefaultBasicStrategy;
 import io.femo.http.auth.DefaultDigestStrategy;
-import io.femo.http.support.Supplier;
+import io.femo.support.jdk7.Supplier;
 import org.jetbrains.annotations.Contract;
 
 

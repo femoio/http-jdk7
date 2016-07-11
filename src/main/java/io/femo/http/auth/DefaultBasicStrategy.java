@@ -2,8 +2,8 @@ package io.femo.http.auth;
 
 import io.femo.http.*;
 import io.femo.http.drivers.DefaultBase64Driver;
-import io.femo.http.support.Supplier;
-import io.femo.http.support.ValueSupplier;
+import io.femo.support.jdk7.Supplier;
+import io.femo.support.jdk7.ValueSupplier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

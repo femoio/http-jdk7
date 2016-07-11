@@ -2,7 +2,7 @@ package io.femo.http.drivers.server;
 
 import io.femo.http.*;
 
-import static io.femo.http.support.HttpUtil.joinPaths;
+import static io.femo.support.jdk7.HttpUtil.joinPaths;
 
 /**
  * Created by felix on 4/26/16.
