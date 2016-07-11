@@ -5,7 +5,6 @@ import io.femo.http.helper.HttpHelper;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.function.Supplier;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
