@@ -2,13 +2,13 @@
 
 This library offers support for platforms that only support *Java 7* (Android, ....)
 
-[![Build Status](https://travis-ci.org/femoio/http.svg?branch=master)](https://travis-ci.org/femoio/http)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.femo/http/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.femo/http)
+[![Build Status](https://travis-ci.org/femoio/http-jdk7.svg?branch=master)](https://travis-ci.org/femoio/http)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.femo/http-jdk7/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.femo/http)
 
         <dependency>
             <groupId>io.femo</groupId>
             <artifactId>http-jdk7</artifactId>
-            <version>0.0.3</version>
+            <version>0.0.2</version>
         </dependency>
 
 This library provides a simple API for developers to perform synchronous and asynchronous HTTP Requests.
