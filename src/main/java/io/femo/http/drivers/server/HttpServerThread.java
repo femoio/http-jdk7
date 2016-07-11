@@ -7,6 +7,7 @@ import io.femo.http.helper.HttpHelper;
 import io.femo.http.helper.HttpSocketOptions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.xjs.dynamic.PluggableAccessor;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -118,14 +119,14 @@ public class HttpServerThread extends Thread {
             while (run) {
                 try {
                     run = false;
-                    HttpHelper.get().add(new HttpSocketOptions());
+                    PluggableAccessor.add(HttpHelper.get(), new HttpSocketOptions());
                     DefaultHttpResponse response = new DefaultHttpResponse();
                     HttpRequest httpRequest = HttpTransport.def().readRequest(socket.getInputStream());
                     long start = System.currentTimeMillis();
                     HttpHelper.remote(socket.getRemoteSocketAddress());
                     HttpHelper.request(httpRequest);
                     HttpHelper.response(response);
-                    HttpHelper.get().add(socket);
+                    PluggableAccessor.add(HttpHelper.get(), socket);
                     httpHandlerStack.handle(httpRequest, response);
                     if (httpRequest.hasHeader("Connection") && !response.hasHeader("Connection") && httpRequest.header("Connection").value().equals("keep-alive")) {
                         response.header("Connection", "keep-alive");
@@ -136,14 +137,15 @@ public class HttpServerThread extends Thread {
                     log.debug("Writing {} bytes to {}", byteArrayOutputStream.size(), socket.getRemoteSocketAddress().toString());
                     byteArrayOutputStream.writeTo(socket.getOutputStream());
                     socket.getOutputStream().flush();
-                    HttpSocketOptions httpSocketOptions = HttpHelper.get().getFirst(HttpSocketOptions.class).get();
+                    HttpSocketOptions httpSocketOptions =
+                            (HttpSocketOptions) PluggableAccessor.get(HttpHelper.get(), HttpSocketOptions.class);
                     if (httpSocketOptions.isClose())
                         socket.close();
                     if (httpSocketOptions.hasHandledCallback()) {
                         httpSocketOptions.callHandledCallback();
                     }
                     log.info("Took {} ms to handle request", (System.currentTimeMillis() - start));
-                    HttpHelper.get().reset();
+                    PluggableAccessor.reset(HttpHelper.get());
                 } catch (SocketTimeoutException e) {
                     log.debug("Connection timed out with " + socket.getRemoteSocketAddress().toString());
                     try {

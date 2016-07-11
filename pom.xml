@@ -193,7 +193,7 @@
         </dependency>
         <dependency>
             <groupId>io.femo</groupId>
-            <artifactId>dynamic</artifactId>
+            <artifactId>dynamic-jdk7</artifactId>
             <version>0.0.1</version>
         </dependency>
         <dependency>
