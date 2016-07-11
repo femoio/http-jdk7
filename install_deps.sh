@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-git clone https://github.com/FelixResch/jdk7-support.git jdk7-support
+git clone https://github.com/femoio/jdk7-support.git jdk7-support
 cd jdk7-support
 mvn install -Dmaven.javadoc.skip=true -DskipTests=true -B -V
 cd ..
 
-git clone https://gitlab.com/xjs/dynamic-jdk7.git dynamic
+git clone https://github.com/femoio/dynamic-jdk7.git dynamic
 cd dynamic
 mvn install -Dmaven.javadoc.skip=true -DskipTests=true -B -V
 cd ..
